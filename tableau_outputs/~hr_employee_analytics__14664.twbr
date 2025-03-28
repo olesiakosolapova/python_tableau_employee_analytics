@@ -1,0 +1,1901 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='employee_cleaned_data' inline='true' name='federated.0wwxixi13jzl3w17su8a90kco3hk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='employee_cleaned_data' name='textscan.10qxh0k1kah0p016kd9b40oid6dl'>
+            <connection class='textscan' directory='C:/Users/Olesia/Documents/portfolio/python_tableau_employee_analytics/data' filename='employee_cleaned_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.10qxh0k1kah0p016kd9b40oid6dl' name='employee_cleaned_data.csv' table='[employee_cleaned_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='EmpID' ordinal='0' />
+            <column datatype='string' name='FirstName' ordinal='1' />
+            <column datatype='string' name='LastName' ordinal='2' />
+            <column datatype='date' name='StartDate' ordinal='3' />
+            <column datatype='string' name='ExitDate' ordinal='4' />
+            <column datatype='string' name='Title' ordinal='5' />
+            <column datatype='string' name='Supervisor' ordinal='6' />
+            <column datatype='string' name='ADEmail' ordinal='7' />
+            <column datatype='string' name='BusinessUnit' ordinal='8' />
+            <column datatype='string' name='EmployeeStatus' ordinal='9' />
+            <column datatype='string' name='EmployeeType' ordinal='10' />
+            <column datatype='string' name='PayZone' ordinal='11' />
+            <column datatype='string' name='EmployeeClassificationType' ordinal='12' />
+            <column datatype='string' name='TerminationType' ordinal='13' />
+            <column datatype='string' name='DepartmentType' ordinal='14' />
+            <column datatype='string' name='Division' ordinal='15' />
+            <column datatype='date' name='DOB' ordinal='16' />
+            <column datatype='string' name='State' ordinal='17' />
+            <column datatype='string' name='JobFunctionDescription' ordinal='18' />
+            <column datatype='string' name='GenderCode' ordinal='19' />
+            <column datatype='integer' name='LocationCode' ordinal='20' />
+            <column datatype='string' name='RaceDesc' ordinal='21' />
+            <column datatype='string' name='MaritalDesc' ordinal='22' />
+            <column datatype='string' name='Performance Score' ordinal='23' />
+            <column datatype='integer' name='Current Employee Rating' ordinal='24' />
+            <column datatype='integer' name='Age' ordinal='25' />
+            <column datatype='string' name='EmploymentDuration' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmpID]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>EmpID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FirstName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FirstName]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>FirstName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LastName]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>LastName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StartDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[StartDate]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>StartDate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExitDate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ExitDate]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>ExitDate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supervisor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Supervisor]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>Supervisor</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADEmail</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ADEmail]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>ADEmail</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessUnit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BusinessUnit]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>BusinessUnit</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmployeeStatus]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>EmployeeStatus</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmployeeType]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>EmployeeType</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PayZone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PayZone]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>PayZone</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeClassificationType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmployeeClassificationType]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>EmployeeClassificationType</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TerminationType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TerminationType]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>TerminationType</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DepartmentType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DepartmentType]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>DepartmentType</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Division</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Division]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>Division</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOB</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DOB]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>DOB</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobFunctionDescription</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JobFunctionDescription]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>JobFunctionDescription</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GenderCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GenderCode]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>GenderCode</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LocationCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LocationCode]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>LocationCode</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RaceDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RaceDesc]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>RaceDesc</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaritalDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MaritalDesc]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>MaritalDesc</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Performance Score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Performance Score]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>Performance Score</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Employee Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Current Employee Rating]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>Current Employee Rating</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmploymentDuration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmploymentDuration]</local-name>
+            <parent-name>[employee_cleaned_data.csv]</parent-name>
+            <remote-alias>EmploymentDuration</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0wwxixi13jzl3w17su8a90kco3hk].[avg:Age:qk]&quot;' value='Average Employee Age' />
+          <alias key='&quot;[federated.0wwxixi13jzl3w17su8a90kco3hk].[avg:Calculation_760545448723050496:qk]&quot;' value='Average Employment Duration' />
+          <alias key='&quot;[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]&quot;' value='Total Employees' />
+        </aliases>
+      </column>
+      <column caption='AD Email' datatype='string' name='[ADEmail]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column caption='Business Unit' datatype='string' name='[BusinessUnit]' role='dimension' type='nominal' />
+      <column caption='EmploymentDurationYears' datatype='integer' name='[Calculation_760545448723050496]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT(LEFT([EmploymentDuration], FIND([EmploymentDuration], &quot; years&quot;) - 1))' />
+      </column>
+      <column caption='Department Type' datatype='string' name='[DepartmentType]' role='dimension' type='nominal' />
+      <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+      <column caption='Employee Classification Type' datatype='string' name='[EmployeeClassificationType]' role='dimension' type='nominal' />
+      <column caption='Employee Status' datatype='string' name='[EmployeeStatus]' role='dimension' type='nominal' />
+      <column caption='Employee Type' datatype='string' name='[EmployeeType]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='EmploymentDurationYears (bin)' datatype='integer' name='[EmploymentDurationYears (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Calculation_760545448723050496]' peg='0' size='1' />
+        <aliases>
+          <alias key='0' value='&lt;1' />
+        </aliases>
+      </column>
+      <column caption='Employment Duration' datatype='string' name='[EmploymentDuration]' role='dimension' type='nominal' />
+      <column caption='Exit Date' datatype='string' name='[ExitDate]' role='dimension' type='nominal' />
+      <column caption='First Name' datatype='string' name='[FirstName]' role='dimension' type='nominal' />
+      <column caption='Gender Code' datatype='string' name='[GenderCode]' role='dimension' type='nominal' />
+      <column caption='Job Function Description' datatype='string' name='[JobFunctionDescription]' role='dimension' type='nominal' />
+      <column caption='Last Name' datatype='string' name='[LastName]' role='dimension' type='nominal' />
+      <column caption='Location Code' datatype='integer' name='[LocationCode]' role='dimension' type='ordinal' />
+      <column caption='Marital Desc' datatype='string' name='[MaritalDesc]' role='dimension' type='nominal' />
+      <column caption='Pay Zone' datatype='string' name='[PayZone]' role='dimension' type='nominal' />
+      <column caption='Race Desc' datatype='string' name='[RaceDesc]' role='dimension' type='nominal' />
+      <column caption='Start Date' datatype='date' name='[StartDate]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Termination Type' datatype='string' name='[TerminationType]' role='dimension' type='nominal' />
+      <column caption='employee_cleaned_data.csv' datatype='table' name='[__tableau_internal_object_id__].[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]' role='measure' type='quantitative' />
+      <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_760545448723050496]' derivation='Avg' name='[avg:Calculation_760545448723050496:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[EmpID]' derivation='Count' name='[cnt:EmpID:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[GenderCode]' derivation='None' name='[none:GenderCode:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Age (bin),Gender Code)' hidden='true' name='[Action (Age (bin),Gender Code)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Age (bin)]' />
+          <groupfilter function='level-members' level='[GenderCode]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Age (bin),Gender Code)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Age (bin):ok]' />
+          <groupfilter function='level-members' level='[none:GenderCode:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Olesia/AppData/Local/Temp/TableauTemp/#TableauTemp_0mmlvku08ym5kn18oiluc07505pq.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/27/2025 07:24:36 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>EmpID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EmpID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmpID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FirstName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FirstName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FirstName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1220</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LastName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LastName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LastName</remote-alias>
+              <ordinal>2</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>998</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StartDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[StartDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StartDate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1233</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ExitDate</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ExitDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ExitDate</remote-alias>
+              <ordinal>4</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>629</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>5</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supervisor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supervisor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supervisor</remote-alias>
+              <ordinal>6</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2701</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ADEmail</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ADEmail]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ADEmail</remote-alias>
+              <ordinal>7</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2925</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BusinessUnit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BusinessUnit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BusinessUnit</remote-alias>
+              <ordinal>8</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmployeeStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmployeeStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmployeeStatus</remote-alias>
+              <ordinal>9</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmployeeType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmployeeType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmployeeType</remote-alias>
+              <ordinal>10</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PayZone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PayZone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PayZone</remote-alias>
+              <ordinal>11</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmployeeClassificationType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmployeeClassificationType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmployeeClassificationType</remote-alias>
+              <ordinal>12</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TerminationType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TerminationType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TerminationType</remote-alias>
+              <ordinal>13</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DepartmentType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DepartmentType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DepartmentType</remote-alias>
+              <ordinal>14</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Division</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Division]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Division</remote-alias>
+              <ordinal>15</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOB</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DOB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DOB</remote-alias>
+              <ordinal>16</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2019</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>17</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobFunctionDescription</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[JobFunctionDescription]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobFunctionDescription</remote-alias>
+              <ordinal>18</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GenderCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GenderCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GenderCode</remote-alias>
+              <ordinal>19</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LocationCode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LocationCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LocationCode</remote-alias>
+              <ordinal>20</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2018</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RaceDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RaceDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RaceDesc</remote-alias>
+              <ordinal>21</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MaritalDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MaritalDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MaritalDesc</remote-alias>
+              <ordinal>22</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Performance Score</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Performance Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Performance Score</remote-alias>
+              <ordinal>23</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Current Employee Rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Current Employee Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Current Employee Rating</remote-alias>
+              <ordinal>24</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>25</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmploymentDuration</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmploymentDuration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmploymentDuration</remote-alias>
+              <ordinal>26</ordinal>
+              <family>employee_cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:GenderCode:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Austria&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='employee_cleaned_data.csv' id='employee_cleaned_data.csv_7161D231A73B4B76B2F570E47CAF9D68'>
+            <properties context=''>
+              <relation connection='textscan.10qxh0k1kah0p016kd9b40oid6dl' name='employee_cleaned_data.csv' table='[employee_cleaned_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='EmpID' ordinal='0' />
+                  <column datatype='string' name='FirstName' ordinal='1' />
+                  <column datatype='string' name='LastName' ordinal='2' />
+                  <column datatype='date' name='StartDate' ordinal='3' />
+                  <column datatype='string' name='ExitDate' ordinal='4' />
+                  <column datatype='string' name='Title' ordinal='5' />
+                  <column datatype='string' name='Supervisor' ordinal='6' />
+                  <column datatype='string' name='ADEmail' ordinal='7' />
+                  <column datatype='string' name='BusinessUnit' ordinal='8' />
+                  <column datatype='string' name='EmployeeStatus' ordinal='9' />
+                  <column datatype='string' name='EmployeeType' ordinal='10' />
+                  <column datatype='string' name='PayZone' ordinal='11' />
+                  <column datatype='string' name='EmployeeClassificationType' ordinal='12' />
+                  <column datatype='string' name='TerminationType' ordinal='13' />
+                  <column datatype='string' name='DepartmentType' ordinal='14' />
+                  <column datatype='string' name='Division' ordinal='15' />
+                  <column datatype='date' name='DOB' ordinal='16' />
+                  <column datatype='string' name='State' ordinal='17' />
+                  <column datatype='string' name='JobFunctionDescription' ordinal='18' />
+                  <column datatype='string' name='GenderCode' ordinal='19' />
+                  <column datatype='integer' name='LocationCode' ordinal='20' />
+                  <column datatype='string' name='RaceDesc' ordinal='21' />
+                  <column datatype='string' name='MaritalDesc' ordinal='22' />
+                  <column datatype='string' name='Performance Score' ordinal='23' />
+                  <column datatype='integer' name='Current Employee Rating' ordinal='24' />
+                  <column datatype='integer' name='Age' ordinal='25' />
+                  <column datatype='string' name='EmploymentDuration' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name=' Workforce Age Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Employee Age Demographics</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employee_cleaned_data' name='federated.0wwxixi13jzl3w17su8a90kco3hk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wwxixi13jzl3w17su8a90kco3hk'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column caption='Gender Code' datatype='string' name='[GenderCode]' role='dimension' type='nominal' />
+            <column-instance column='[EmpID]' derivation='Count' name='[cnt:EmpID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[GenderCode]' derivation='None' name='[none:GenderCode:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[Action (Age (bin),Gender Code)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_E6F2FAC53CE74BC3A9B60F87107649CD]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Age (bin)]' />
+              <groupfilter function='level-members' level='[GenderCode]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[Exclusions (Age (bin),Gender Code)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age (bin):ok]' />
+              <groupfilter function='level-members' level='[none:GenderCode:nk]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:Age (bin):ok]'>
+            <groupfilter function='level-members' level='[none:Age (bin):ok]' />
+          </filter>
+          <slices>
+            <column>[federated.0wwxixi13jzl3w17su8a90kco3hk].[Action (Age (bin),Gender Code)]</column>
+            <column>[federated.0wwxixi13jzl3w17su8a90kco3hk].[Exclusions (Age (bin),Gender Code)]</column>
+            <column>[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:Age (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' value='80' />
+            <format attr='title' class='0' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' scope='rows' value='Total Employees' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:GenderCode:nk]' value='Gender'>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>Gender</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:GenderCode:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]</rows>
+        <cols>[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:Age (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{ED8C372E-7690-4E81-BB38-0A2306CD0A1A}' />
+    </worksheet>
+    <worksheet name='Employee Count by Department'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Workforce Distribution by Department</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employee_cleaned_data' name='federated.0wwxixi13jzl3w17su8a90kco3hk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wwxixi13jzl3w17su8a90kco3hk'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Department Type' datatype='string' name='[DepartmentType]' role='dimension' type='nominal' />
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column caption='Gender Code' datatype='string' name='[GenderCode]' role='dimension' type='nominal' />
+            <column-instance column='[EmpID]' derivation='Count' name='[cnt:EmpID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DepartmentType]' derivation='None' name='[none:DepartmentType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[Action (Age (bin),Gender Code)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_E6F2FAC53CE74BC3A9B60F87107649CD]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Age (bin)]' />
+              <groupfilter function='level-members' level='[GenderCode]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:DepartmentType:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0wwxixi13jzl3w17su8a90kco3hk].[Action (Age (bin),Gender Code)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' field-type='quantitative' major-origin='0' major-spacing='200' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' scope='cols' value='Total Employees' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:DepartmentType:nk]' value='288' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='normal' />
+            <format attr='text-orientation' value='0' />
+            <format attr='text-align' value='right' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='right' />
+            <format attr='vertical-align' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:DepartmentType:nk]' value='center' />
+            <format attr='text-align' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:DepartmentType:nk]' value='right' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='387' />
+                <format attr='maxwidth' value='387' />
+                <format attr='minheight' value='120' />
+                <format attr='maxheight' value='120' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:DepartmentType:nk]</rows>
+        <cols>[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]</cols>
+      </table>
+      <simple-id uuid='{513C5035-638B-401A-9DD8-11A54DC488E9}' />
+    </worksheet>
+    <worksheet name='Employment Duration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Employee Duration (Years)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employee_cleaned_data' name='federated.0wwxixi13jzl3w17su8a90kco3hk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wwxixi13jzl3w17su8a90kco3hk'>
+            <column caption='EmploymentDurationYears' datatype='integer' name='[Calculation_760545448723050496]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(LEFT([EmploymentDuration], FIND([EmploymentDuration], &quot; years&quot;) - 1))' />
+            </column>
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column aggregation='None' caption='EmploymentDurationYears (bin)' datatype='integer' name='[EmploymentDurationYears (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Calculation_760545448723050496]' peg='0' size='1' />
+              <aliases>
+                <alias key='0' value='&lt;1' />
+              </aliases>
+            </column>
+            <column caption='Employment Duration' datatype='string' name='[EmploymentDuration]' role='dimension' type='nominal' />
+            <column-instance column='[EmpID]' derivation='Count' name='[cnt:EmpID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EmploymentDurationYears (bin)]' derivation='None' name='[none:EmploymentDurationYears (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' scope='rows' value='Total Employees' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]</rows>
+        <cols>[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:EmploymentDurationYears (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0wwxixi13jzl3w17su8a90kco3hk].[EmploymentDurationYears (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{95B52DC3-22B5-4C1F-B4B3-B437387872E4}' />
+    </worksheet>
+    <worksheet name='Gender Breakdown'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employee_cleaned_data' name='federated.0wwxixi13jzl3w17su8a90kco3hk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wwxixi13jzl3w17su8a90kco3hk'>
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column caption='Gender Code' datatype='string' name='[GenderCode]' role='dimension' type='nominal' />
+            <column-instance column='[EmpID]' derivation='Count' name='[cnt:EmpID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GenderCode]' derivation='None' name='[none:GenderCode:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:GenderCode:nk]' />
+              <wedge-size column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{527B6BC8-6741-46AF-979F-967A9FDCE511}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Summary</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employee_cleaned_data' name='federated.0wwxixi13jzl3w17su8a90kco3hk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wwxixi13jzl3w17su8a90kco3hk'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='EmploymentDurationYears' datatype='integer' name='[Calculation_760545448723050496]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(LEFT([EmploymentDuration], FIND([EmploymentDuration], &quot; years&quot;) - 1))' />
+            </column>
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column caption='Employment Duration' datatype='string' name='[EmploymentDuration]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_760545448723050496]' derivation='Avg' name='[avg:Calculation_760545448723050496:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EmpID]' derivation='Count' name='[cnt:EmpID:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0wwxixi13jzl3w17su8a90kco3hk].[avg:Age:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0wwxixi13jzl3w17su8a90kco3hk].[avg:Calculation_760545448723050496:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0wwxixi13jzl3w17su8a90kco3hk].[avg:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0wwxixi13jzl3w17su8a90kco3hk].[avg:Calculation_760545448723050496:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0wwxixi13jzl3w17su8a90kco3hk].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[:Measure Names]' value='366' />
+            <format attr='height' value='112' />
+            <format attr='width' value='689' />
+            <format attr='text-align' value='center' />
+            <format attr='border-width' scope='cols' value='2' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[:Measure Names]' value='39' />
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='text-align' scope='cols' value='center' />
+            <format attr='vertical-align' scope='cols' value='center' />
+            <format attr='font-size' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[Multiple Values]' value='16' />
+            <format attr='font-size' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[:Measure Names]' value='12' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' scope='rows' value='2' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+            <format attr='border-width' data-class='subtotal' value='2' />
+            <format attr='border-color' data-class='subtotal' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='2' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='18'><![CDATA[<[federated.0wwxixi13jzl3w17su8a90kco3hk].[Multiple Values]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0wwxixi13jzl3w17su8a90kco3hk].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{4437F375-5369-4E54-A245-1B818E8CF111}' />
+    </worksheet>
+    <worksheet name='Race Breakdown'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='employee_cleaned_data' name='federated.0wwxixi13jzl3w17su8a90kco3hk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wwxixi13jzl3w17su8a90kco3hk'>
+            <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+            <column caption='Race Desc' datatype='string' name='[RaceDesc]' role='dimension' type='nominal' />
+            <column-instance column='[EmpID]' derivation='Count' name='[cnt:EmpID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[RaceDesc]' derivation='None' name='[none:RaceDesc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:RaceDesc:nk]' value='Race'>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>Race</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:RaceDesc:nk]' />
+              <size column='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D6B11D75-E36F-4E78-A584-C30327935385}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='HR Employee Overview Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Bold' fontsize='20'>HR Employee Overview Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='22' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='20' type-v2='layout-basic' w='98828' x='586' y='1042'>
+              <zone h='73958' id='14' param='horz' type-v2='layout-flow' w='98828' x='586' y='25000'>
+                <zone h='73958' id='12' type-v2='layout-basic' w='98828' x='586' y='25000'>
+                  <zone h='39844' id='41' is-fixed='true' type-v2='layout-basic' w='98828' x='586' y='25000'>
+                    <zone h='39844' id='9' param='horz' type-v2='layout-flow' w='48462' x='586' y='25000'>
+                      <zone fixed-size='630' h='39844' id='32' is-fixed='true' param='horz' type-v2='layout-flow' w='48462' x='586' y='25000'>
+                        <zone h='39844' id='11' name=' Workforce Age Distribution' w='48462' x='586' y='25000'>
+                          <layout-cache cell-count-w='13' minheight='182' non-cell-size-w='80' type-h='scalable' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#e6e6e6' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='2' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                    <zone h='39844' id='42' param='horz' type-v2='layout-flow' w='50366' x='49048' y='25000'>
+                      <zone fixed-size='747' h='39844' id='10' is-fixed='true' name='Employee Count by Department' w='50366' x='49048' y='25000'>
+                        <layout-cache fixed-size-h='257' has-max-size-w='true' maxwidth='631' minwidth='631' type-h='fixed' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#e6e6e6' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='2' />
+                          <format attr='margin' value='4' />
+                          <format attr='margin-top' value='5' />
+                          <format attr='margin-right' value='9' />
+                          <format attr='margin-left' value='0' />
+                          <format attr='padding' value='6' />
+                          <format attr='padding-top' value='24' />
+                          <format attr='padding-right' value='0' />
+                          <format attr='padding-bottom' value='0' />
+                          <format attr='padding-left' value='0' />
+                        </zone-style>
+                      </zone>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='padding' value='0' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='34114' id='35' name='Employment Duration' w='50366' x='49048' y='64844'>
+                    <zone-style>
+                      <format attr='border-color' value='#e6e6e6' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='2' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='27474' id='52' param='horz' type-v2='layout-flow' w='48462' x='586' y='71484'>
+                    <zone fixed-size='163' h='26954' id='19' is-fixed='true' name='Race Breakdown' w='12396' x='732' y='71744'>
+                      <layout-cache fixed-size-h='175' type-h='fixed' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='166' h='26954' id='23' is-fixed='true' leg-item-layout='grid' name='Race Breakdown' pane-specification-id='0' param='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:RaceDesc:nk]' type-v2='color' w='12396' x='13128' y='71744'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='170' h='26954' id='18' is-fixed='true' name='Gender Breakdown' w='12396' x='25524' y='71744'>
+                      <layout-cache type-h='fixed' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='142' h='26954' id='15' is-fixed='true' name=' Workforce Age Distribution' pane-specification-id='0' param='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:GenderCode:nk]' type-v2='color' w='10982' x='37920' y='71744'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone-style>
+                      <format attr='border-color' value='#e6e6e6' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='2' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='6640' id='56' type-v2='text' w='48462' x='586' y='64844'>
+                    <formatted-text>
+                      <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='15'>Diversity Analysis (Gender &amp; Race)</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#e6e6e6' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='2' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='10807' id='7' type-v2='title' w='98828' x='586' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#f5f5f5' />
+                </zone-style>
+              </zone>
+              <zone h='13151' id='46' param='vert' type-v2='layout-flow' w='98828' x='586' y='11849'>
+                <zone h='13151' id='45' name='KPI' show-title='false' w='98828' x='586' y='11849'>
+                  <layout-cache cell-count-h='1' non-cell-size-h='39' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#fefaf1' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Bold' fontsize='20'>HR Employee Overview Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='76' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='75' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='10807' id='7' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5f5f5' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='93' h='13151' id='45' is-fixed='true' name='KPI' show-title='false' w='98828' x='586' y='11849'>
+                  <layout-cache cell-count-h='1' non-cell-size-h='39' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#fefaf1' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39844' id='11' is-fixed='true' name=' Workforce Age Distribution' w='48462' x='586' y='25000'>
+                  <layout-cache cell-count-w='13' minheight='182' non-cell-size-w='80' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='142' h='26954' id='15' name=' Workforce Age Distribution' pane-specification-id='0' param='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:GenderCode:nk]' type-v2='color' w='10982' x='37920' y='71744'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='269' h='39844' id='10' is-fixed='true' name='Employee Count by Department' w='50366' x='49048' y='25000'>
+                  <layout-cache fixed-size-h='257' has-max-size-w='true' maxwidth='631' minwidth='631' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='6640' id='56' type-v2='text' w='48462' x='586' y='64844'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='15'>Diversity Analysis (Gender &amp; Race)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='250' h='34114' id='35' is-fixed='true' name='Employment Duration' w='50366' x='49048' y='64844'>
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='199' h='26954' id='19' is-fixed='true' name='Race Breakdown' w='12396' x='732' y='71744'>
+                  <layout-cache fixed-size-h='175' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='166' h='26954' id='23' leg-item-layout='grid' name='Race Breakdown' pane-specification-id='0' param='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:RaceDesc:nk]' type-v2='color' w='12396' x='13128' y='71744'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='199' h='26954' id='18' is-fixed='true' name='Gender Breakdown' w='12396' x='25524' y='71744'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A5D8CB1C-D34B-47BA-8686-14CFE7E57269}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='44'>
+    <window class='worksheet' name='Employee Count by Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='218'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C13A6748-39A0-4F79-A131-452270DBDC80}' />
+    </window>
+    <window class='worksheet' name=' Workforce Age Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:GenderCode:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{866A9DA8-92DC-40F7-AF21-E15146A3C2C8}' />
+    </window>
+    <window class='worksheet' name='Gender Breakdown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:GenderCode:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B6CE4AA-F32D-44B9-996E-B925278D66E7}' />
+    </window>
+    <window class='worksheet' name='Race Breakdown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0wwxixi13jzl3w17su8a90kco3hk].[none:RaceDesc:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0wwxixi13jzl3w17su8a90kco3hk].[cnt:EmpID:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9D1050D2-9144-47F4-8340-2D435D604028}' />
+    </window>
+    <window class='worksheet' name='Employment Duration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B4FBECE-8AD6-458A-827B-3951C9B2ECC2}' />
+    </window>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='182'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{765BC5F7-EACE-4376-AA00-1DAB15035C60}' />
+    </window>
+    <window class='dashboard' maximized='true' name='HR Employee Overview Dashboard'>
+      <viewpoints>
+        <viewpoint name=' Workforce Age Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Employee Count by Department' />
+        <viewpoint name='Employment Duration'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender Breakdown' />
+        <viewpoint name='KPI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Race Breakdown' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B66939D1-753E-482A-AFC1-16DDC6AB0DBE}' />
+    </window>
+  </windows>
+</workbook>
